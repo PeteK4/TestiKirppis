@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
             lomake.reset();
 
             // Näytä viesti lähetyksen onnistumisesta
-            const viestiElement = document.createElement("p");
-            viestiElement.textContent = "Lomake lähetetty onnistuneesti!";
-            lomake.appendChild(viestiElement);
+            confirm("Viesti lähetetty ilmoittajalle.")
 
         } else {
             // Ilmoita käyttäjälle, että kaikki tiedot on täytettävä

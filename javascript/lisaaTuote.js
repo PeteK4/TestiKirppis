@@ -50,8 +50,8 @@ document.getElementById('product-form').addEventListener('submit', function(even
     addProductToPreview(product);
 
     // Tyhjennä lomake seuraavaa syöttöä varten
+    document.getElementById("laskuri").innerText= "0 / 200";
     document.getElementById('product-form').reset();
-
     alert('Ilmoitus lisätty kirppikselle!')
 });
 
