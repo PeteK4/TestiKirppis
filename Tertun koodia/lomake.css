@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+    padding: 5px;
+  }
+    
+  .label-input label {
+    background-color: rgb(132, 215, 238);
+    width: 100px; /* kiinteä leveys teksteille */
+    text-align: right;
+    padding-right: 5px; /* välistystä tekstin ja kentän väliin */
+  }
+  
+  .label-input input {
+    background-color:rgb(247, 248, 191);
+    text-align: left;
+    flex-grow: 1;
+  }
+  
+  .label-input textarea {
+    vertical-align: top; /* Asetetaan pystysuuntainen kohdistus yläosaan */
+  }
+  
+  button[type="submit"] {
+    color:aliceblue;
+    display: block;     /* Muuttaa napin lohkoelementiksi */
+    margin: 0 auto;     /* Keskittää napin sivusuunnassa (keskellä vaakatasossa) */
+    text-align: center; /* Keskittää napin tekstisisällön vaakasuunnassa */
+  }
+  
+  #main {
+    width: 100%;
+    padding: 0px;
+  }
+  
+  

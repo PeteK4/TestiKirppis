@@ -1,0 +1,50 @@
+.kategoriat {
+    margin-bottom: 20px;
+}
+
+.kategoriat button {
+    margin-right: 10px;
+}
+
+.tuotteet div {
+    background-color: #3f20c7;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#napitKategoria{
+    margin-top: 10px;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: var(--ilmoitaLomake);
+    padding: 30px 0px;
+}
+
+.tuote-elementti {
+    padding: 10px;
+    max-width: 1200px;
+    margin:auto;
+    background-color: rgb(120, 173, 175);
+    display: block;
+    align-items: center;
+    border-radius: 8px;
+    border: 3px solid #ccc; /* Kehyksen tyyli, leveys ja väri */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Lisää varjostus */
+}
+
+.tuote-elementti p {
+    padding: 0 0 0 10;
+    margin: 5px 0;
+    color: #050505;
+}
+
+.tuote-elementti {
+   /* background-color: rgb(155, 155, 155);
+  } /*taustavärin kokeilu 22.3.*/
+background-color: var(--tuoteLista);
+}
+
+h3 {
+    margin: 0;
+}

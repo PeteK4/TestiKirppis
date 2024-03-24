@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/stlMain.css">
+        <link rel="stylesheet" href="../styles/stlMQuery.css">
+        <link rel="stylesheet" href="../styles/kirppis.css">
+        <link rel="stylesheet" href="../styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+        <style>
+          .ylaPalkki {
+            height: 8em !important;
+          }
+        </style>
+    </head>
+
+    <body>
+
+      <div class="ylaPalkki" style="height: 120px !important;">
+        <div id="ylaPalkkiTeksti1">Ylläpitäjän toimet</div>
+        <button id="nappiKirjaudu">Kirjaudu sisään</button>
+        <button id="nappiLuoTunnus">Luo uusi tunnus</button>
+        <div id="ylaPalkkiTeksti2"></div>
+      </div>
+
+      <h1 id="otsikko">NETTIKIRPPIS MoniTori</h1>
+        <div class="lomake">
+          <div id="lomakeOtsikko"></div>
+            <div id="tuote-lomake-container">
+              <form id="tuote-lomake">
+              <div id="kentta1">
+                <label for="id">Tunnus:</label>
+                <input class="kenttaLayout" type="text" id="id">
+              </div>
+        
+              <div id="kentta2">
+                <label for="salasana">Salasana:</label>
+                <input class="kenttaLayout" type="text" id="salasana">
+              </div>
+
+              <div id="kentta5">
+                <button type="button" id="nappiLuoUusiTunnus">Luo tunnus</button>
+                <button type="button" id="nappiPeruutaLuoTunnus" style="margin: 0px;">Peruuta</button>
+              </div>
+
+              <div id="kentta6">
+                <button type="button" id="nappiKirjauduKirppis">Kirjaudu</button>
+                <button type="button" id="nappiPeruutaKirjautuminen" style="margin: 0px;">Peruuta
+                </button>
+              </div>
+            </form>
+            <div class="logo1">
+              <img src="../kuvat/logo.png" alt="Logo" draggable="false">
+            </div>
+          </div>
+        </div>
+
+        <script src="../admin/rekAdmin.js"></script>
+        <script src="../admin/luoTunnusAdmin.js"></script>
+        <script src="../javascript/kirjaudu.js"></script>
+
+        <script src="../admin/admin.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,11 @@
+
+.product-preview-item {
+    display: flex;
+    align-items: center
+    }
+    
+    .product-preview-item img {
+    margin-right: 10px;
+    }
+    
+    

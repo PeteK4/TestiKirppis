@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stlMain.css">
+        <link rel="stylesheet" href="./styles/stlMQuery.css">
+        <link rel="stylesheet" href="./styles/kirppis.css">
+        <link rel="stylesheet" href="./styles/yhteydenotto.css">
+        <link rel="stylesheet" href="./styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+    </head>
+
+    <body>
+
+        <div class="ylaPalkki">            
+            <img class="logo" src="./kuvat/logo.png" alt="Logo">
+            <div id="ylaPalkkiTeksti1">Nettikirppis MoniTori</div>
+            <div id="linkkiNapit"></div>
+        </div>
+
+        <div id="valiOtsikko">Ota yhteyttä ilmoittajaan:</div>
+        <div id="tuoteTiedot"></div> <!-- Tähän tulee tuotetiedot -->
+
+        <div id="lomake1">
+            <form id="yhteydenotto">
+                <ul>
+                    <li>
+                        <label for="omanimi">Oma nimi:</label>
+                        <input id="omanimi" name="omanimi" type="text" value="" minlength="1" maxlength="50" size="20" title="Muista ilmoittaa oma nimi" required="">
+                    </li>
+                    <li>
+                        <label for="omasposti">Oma sähköposti:</label>
+                        <input id="omasposti" name="email" type="email" value="" minlength="4" maxlength="50" size="20" title="Muista ilmoittaa oma sähköpostiosoite" required="">
+                    </li>       
+                    <li>
+                        <label for="tekstiKentta">Viesti ilmoituksen jättäjälle:</label>
+                        <textarea id="tekstiKentta" rows="5" minlength="10" maxlength="200" cols="55" name="message" title="Muista lähettää viesti" required></textarea>
+                    </li>                         
+                    <li>
+                        <div class="laskuri2" id="laskuri">0 / 200</div>
+                    </li>
+                    <li>
+                        <button type="submit" name="lahetaviesti" id="nappiLaheta">Lähetä viesti</button>
+                    </li>
+                </ul> 
+            </form>
+        </div>
+
+        <script src="./javascript/tarkistaKirjautuminen.js"></script> 
+        <script src="./javascript/napit.js"></script>
+        <script src="./javascript/laskuri.js"></script>
+        <script src="./javascript/yhteydenotto.js"></script>
+        <script>lataaNapit("linkkiNapit");</script>
+    </body>
+</html>        

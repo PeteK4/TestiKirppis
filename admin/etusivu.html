@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/stlMain.css">
+        <link rel="stylesheet" href="../styles/stlMQuery.css">
+        <link rel="stylesheet" href="../styles/kirppis.css">
+        <link rel="stylesheet" href="../styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+    </head>
+
+    <body>
+
+        <div class="ylaPalkki">            
+            <img class="logo" src="../kuvat/logo.png" alt="Logo">
+            <div id="ylaPalkkiTeksti1">Ylläpitäjä
+            </div>
+
+            <div id="linkit">
+                <button id="nappiKirjauduUlos">Kirjaudu ulos</button>
+            </div>
+        </div>
+
+        <div id="admin-list"></div>
+        <div id="valiOtsikko">Kirpikselle ilmoitetut tuotteet:</div>
+        <div id="sivuNumerointi">Tuotesivu: <span id="sivuNro">1</span></div>
+        <div id="product-list"></div>
+
+        <div id="pagination">
+            <button id="prevPageButton">Edellinen sivu</button>
+            <span id="currentPage"></span>
+            <span id="pageCount"></span>
+            <button id="nextPageButton">Seuraava sivu</button>
+        </div>
+
+        <img id="palaaSivunAlkuun" src="../kuvat/sivunAlkuun.webp" alt="" title="Palaa sivun alkuun" draggable="false">
+
+        <!-- <script src="./javascript/tarkistaKirjautuminen.js"></script> -->
+        <script src="../javascript/tuotelista.js"></script>
+        <script src="../javascript/sivunAlkuun.js"></script>
+        <script src="../admin/admin.js"></script>     
+
+        <script>
+            document.getElementById("nappiKirjauduUlos").addEventListener("click", function() {
+              if (confirm("Vahvista uloskirjautuminen.")) {
+                localStorage.setItem("kirjautunut", "eiKirjautunut");
+                window.location.href = "../admin/admin.html";
+              }
+            });
+        </script>
+        
+    </body>
+</html>

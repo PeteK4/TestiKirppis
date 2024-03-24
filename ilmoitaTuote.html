@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stlMain.css">
+        <link rel="stylesheet" href="./styles/stlMQuery.css">
+        <link rel="stylesheet" href="./styles/kirppis.css">
+        <link rel="stylesheet" href="./styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+    </head>
+
+    <body>
+
+        <div class="ylaPalkki">            
+            <img class="logo" src="./kuvat/logo.png" alt="Logo">
+            <div id="ylaPalkkiTeksti1">Nettikirppis MoniTori</div>
+            <div id="linkkiNapit"></div>
+        </div>
+
+        <div id="valiOtsikko">Omat ilmoituksesi kirppiksellä:</div>
+
+        <!-- siirretty index.html: sivulta 27.2.2024-->
+        
+        <div id="lisaaTuotteet">
+            <form id="product-form">
+                <h1 class="otsikko1">Ilmoita uusi tuote kirppikselle</h1>
+               
+                <input type="text" class="product-name" placeholder="Tuotteen nimi" required maxlength="40">
+                <textarea class="product-description" id="tekstiKentta" placeholder="Kuvaus" required maxlength="200"></textarea>
+                <div id="laskuri">0 / 200</div>
+                <input type="text" class="product-price" placeholder="Hinta €" pattern="[0-9]*" required maxlength="5" style="width: 10%; margin-bottom: 10px;"><br>
+                <select class="kategoria" required style="width: 40%; margin-bottom: 10px;">
+                    <option value="" disabled selected>Tuoteluokka</option>
+                    <option value="vaatteet">Vaatteet</option>
+                    <option value="keittiö">Keittiö</option>
+                    <option value="kirjat">Kirjat</option>
+                    <option value="huonekalut">Huonekalut</option>
+                    <option value="tietotekniikka">Tietotekniikka</option>
+                    <option value="muut">Muut</option>
+                </select>
+                
+                <select class="tyyppi" required>
+                    <option value="" disabled selected>Tyyppi</option>
+                    <option value="ostan">Ostan</option>
+                    <option value="myyn">Myyn</option>
+                    <option value="tarvitsen">Tarvitsen</option>
+                    <option value="lahjoitan">Lahjoitan</option>
+                </select>
+                <br>
+                <button type="submit" class="lataa">Tallenna tiedot</button> <!-- Lataa kuva ja tallenna tiedot -->
+             
+            </form>
+        </div>
+
+          <div id="valiOtsikko2">Ilmoittamasi tuotteet näkyvät tässä:</div>
+
+          <div id="product-previews">
+            <div style="display: none" id="viesti">Sinulla ei ole ilmoituksia kirpparilla.</div>
+          </div>
+        
+          <img id="palaaSivunAlkuun" src="./kuvat/sivunAlkuun.webp" alt="" title="Palaa sivun alkuun" draggable="false">
+
+          <script src="./javascript/tarkistaKirjautuminen.js"></script> 
+        <script src="./javascript/lisaaTuote.js"></script>
+        <script src="./javascript/napit.js"></script> 
+        <script src="./javascript/sivunAlkuun.js"></script>  
+        <script src="./javascript/laskuri.js"></script>
+        <script>lataaNapit("linkkiNapit");</script>
+    </body>
+</html>
+

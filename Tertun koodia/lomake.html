@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirpputori</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="tyylit.css">
+    <link rel="stylesheet" href="lomake.css">
+
+  </head>
+  
+  <header>
+    
+  </header>
+  
+  <body>
+    <main>
+      <h1><b>Rekisteröitymislomake</b></h1>
+
+      <a href="index.html">Siirry Etusivulle</a>
+    </main>
+    <div id="main">          
+        <p><b>Siirry kentästä toiseen tab-näppäimellä:</b></p>
+    </div>
+
+        <form id="lomake" onsubmit="return validateForm(event)">
+            <div class="label-input">
+                <label for="ID">Käyttäjä ID:  </label>
+                <input type="text" id="ID" name="ID" size="20" oninput="tarkistaID()">
+                <div id="IDError" style="color: red;">
+                </div>
+            </div>
+            </div><br>
+            <div class="label-input">
+                <label for="salasana">Salasana:  </label>
+                <input type="password" id="salasana" name="salasana" size="20" oninput="tarkistaSalasana()">
+                <div id="salasana-error" class="error" style="color: red;"> </div>
+                
+            </div><br>
+            <div class="label-input">
+                <label for="nimi">Nimi:  </label>
+                <input type="text" id="nimi" name="nimi" size="40" oninput="tarkistaNimi()">
+                <div id="nimi-error" style="color: red;"></div>
+            </div><br>
+                
+            </div><br>
+            <div class="label-input">
+                <label for="email">Sähköposti:  </label>
+                <input type="text" id="email" name="email" size="40">
+                <div id="email-error" style="color: red;"></div>
+            </div>
+            <br>
+                <button type="submit" class="btn btn-info"><b>Lähetä</b>
+                </button>
+            </div>
+            <div id="ilmoitus" style="display: none;">
+                Lomake lähetetty onnistuneesti!
+            </div>
+    <footer>
+  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="kuva.js"></script>
+    <script src="sovellus.js"></script>
+    <script src="lomake.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,224 @@
+/* MEDIA QUERYT ----------------------------------------*/
+
+@media (max-width: 1080px) {
+
+  body::before {
+    display: block;
+    content: "";
+    height: 200px;
+  }
+
+  .lomake {
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #lomakeOtsikko {
+    margin-top: 5%;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+
+  .ylaPalkki {
+    height: 12em;
+  }
+
+  #ylaPalkkiTeksti1,
+  #ylaPalkkiTeksti2 {
+    white-space: nowrap;
+    margin: 10px;
+    font-size: 6vw;
+  }
+
+  #otsikko {
+    margin-top: -60px;
+    font-size: 9vw;
+  }
+
+  #otsikkoKirppis {
+    font-size: 8vw;
+    margin-top: 1em;
+  }
+
+  #valiOtsikko {
+    font-size: 6vw;
+    margin-bottom: 20px;
+
+  }
+
+  #valiOtsikko2 {
+    color: white;
+    text-align:center;
+    font-size: 6vw;
+    margin: 50px 0px;
+  }
+
+  #sivuNumerointi {
+    font-size: 5vw;
+  }
+
+  #etusivuKuva {
+    margin: 20px auto;
+    border-radius: 0px !important;
+  }
+
+  #etuLasi {
+    display: none !important;
+  }
+
+  #kentta1,
+  #kentta2,
+  #kentta3,
+  #kentta4,
+  #kentta5,
+  #kentta6 {
+    width: 95%;
+  }
+
+  #kentta1 label,
+  #kentta2 label,
+  #kentta3 label,
+  #kentta4 label {
+    width: 65%;
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  .kenttaLayout {
+    width: 200%;
+  }
+
+  #kategoriaTuotteetOtsikko {
+    margin-top: 30px;
+    font-size: 5vw;
+  }
+
+  #kategoriaTuotteet {
+    margin: 40px auto !important;
+    max-width: 97% !important;
+  }
+
+  #hakutulokset {
+    max-width: 97% !important;
+    width: 800px !important;
+  }
+
+  #nappiKirjaudu,
+  #nappiLuoTunnus {
+    width: 222px;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 15px;
+    background-color: #6eda8e;
+    cursor: pointer;
+    transition: .05s;
+  }
+
+  #nappiLuoUusiTunnus,
+  #nappiKirjauduKirppis,
+  #nappiPeruutaLuoTunnus,
+  #nappiPeruutaKirjautuminen {
+    margin: 20px 20px 0px 40px !important;
+    padding: 5px 5px;
+    width: 100px;
+    font-size: .8em;
+  }
+
+
+  #nappiEtusivu,
+  #nappiKategoriat,
+  #nappiIlmoita,
+  #nappiTuotehaku,
+  #nappiKirjauduUlos {
+    font-size: .8em;
+    margin-top: 2px;
+    width: 150px !important; 
+  }
+
+  #nappiLaheta {
+    font-size: .8em;
+    margin: 0px 90px;
+    }
+
+  #prevPageButton,
+  #nextPageButton {
+  margin: 20px 20px 0px 0px !important;
+
+}
+
+  #etusivuKuva {
+    border-radius: 5px;
+  }
+
+  #palaaSivunAlkuun {
+    bottom: 55px;
+    width: 30px;
+  }
+
+  #laskuri {
+    margin: -10px auto;
+    width: 94%;
+    transform: translateY(-25px);
+  }
+
+  .laskuri2 {
+    margin: -40px 0px 0px 10px !important;
+  }
+  
+
+  .product-form {
+    width: 100%;
+  }
+
+ #product-previews {
+    margin-top: 40px !important;
+  }
+
+  .product-description {
+    height: 160px;
+    width: 96%;
+  }
+
+  .product-name {
+    width: 96%;
+  }
+  
+  .product-price {
+    width: 38% !important;
+  }
+
+  #admin-list {
+    margin-bottom: 10px !important;
+  }
+
+  #viesti {
+    color: var(--tekstiMusta);
+    text-align: center;
+    font-size: 6vw;
+    margin: 20px 0px;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  body::before {
+    display: block;
+    content: "";
+    height: 220px;
+  }
+
+  #otsikko {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 2800px) {
+
+  body::before {
+    display: block;
+    content: "";
+    height: 280px;
+  }
+}

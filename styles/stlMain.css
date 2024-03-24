@@ -1,0 +1,348 @@
+html {
+  cursor: url("../kuvat/nuoli.webp"), auto;
+}
+
+body {
+  background-color: var(--body);
+  user-select: none;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 150px;
+}
+
+.ylaPalkki {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vw;
+  z-index: 3;
+  text-align: center;
+  background-image: linear-gradient(to top, #163b35, #337c7c);
+}
+
+#ylaPalkkiTeksti1 {
+  display: block;
+  font-size: 2vw;
+}
+
+#ylaPalkkiTeksti2 {
+  display: none;
+  font-size: 2.5vw;
+}
+
+#ylaPalkkiTeksti1, 
+#ylaPalkkiTeksti2 {
+  display: block;
+  color: var(--tekstiValkoinen);
+  margin-top: 10px;
+  text-align: center;
+}
+
+#otsikko {
+  color: var(--tekstiValkoinen);
+  font-size: 3.2vw;
+  text-align: center;
+}
+
+#otsikkoKirppis,
+#kategoriaTuotteetOtsikko {
+  color: var(--tekstiValkoinen);
+  font-size: 3.2vw;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+#valiOtsikko {
+  color: var(--tekstiValkoinen);
+  text-align:center;
+  font-size: 2.5em;
+  margin: 0px 0px 30px 0px
+}
+
+#valiOtsikko2 {
+  color: var(--tekstiValkoinen);
+  text-align:center;
+  font-size: 2.5em;
+  margin: 50px 0px;
+}
+
+#viesti {
+  color: var(--tekstiMusta);
+  text-align: center;
+  font-size: 2vw;
+  margin: 30px 0px;
+  padding: 10px 0px;
+}
+
+#sivuNumerointi {
+  color: var(--tekstiValkoinen);
+  text-align:center;
+  font-size: 1.5vw;
+  margin: 10px 0px 15px 0px;
+}
+
+#tekstiKentta {
+resize: none;
+}
+
+#etusivuKuva {
+  position: relative;
+  display: block;
+  margin: 50px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+#etuLasi {
+  position: relative;
+  display: block;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px var(--taustaVarjo);
+  transform: translateY(-104.5%);
+  z-index: 1;
+}
+
+.lomake {
+  display: none;
+  position: fixed;
+  left: 50%;
+  width: 800px;
+  transform: translate(-50%, -50%);
+  padding: 40px 50px 20px 20px;
+  background-image: url("../kuvat/paperi2.webp");
+  background-size: 100%;
+  box-shadow: 15px 15px 15px var(--taustaVarjo);
+  font-weight: bold;
+  color: #333;
+  z-index: 2;
+
+}
+
+#lomakeOtsikko {
+  margin: 50px auto 10px auto;
+  margin-left: 0px;
+  font-size: 2.5em;
+}
+
+#kentta1,
+#kentta2,
+#kentta3,
+#kentta4,
+#kentta5,
+#kentta6 {
+    display: flex;
+    align-items: baseline;
+}
+
+#kentta1 label,
+#kentta2 label,
+#kentta3 label,
+#kentta4 label {
+  width: 120px;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+  
+.kenttaLayout {
+  width: 72%;
+  height: 18px;
+  border: solid 1px;
+  background-color: #ffffff;
+}
+
+#kategoriaTuotteet {
+  max-width: 800px;
+  margin: 140px auto;
+}
+
+#laskuri,
+laskuri2 {
+  position: relative;
+  margin: -35px auto 15px;
+  width: 96%;
+  text-align: right;
+  color: var(--tekstiMusta);
+  font-weight: bold;
+}
+
+.laskuri2 {
+  margin: -30px auto 55px !important;
+}
+
+::placeholder {
+  color: rgb(121, 134, 155);
+}
+
+
+#hakukentta,
+#hakunappi,
+.product-name,
+.product-description,
+.product-price,
+.lataa,
+.kategoria,
+.tyyppi {
+  display: inline-block;
+  color: var(--tekstiMusta);
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: solid 1px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: .04s;
+  cursor: pointer;
+}
+
+.product-name {
+  margin: 10px 0px;
+  width: 50%;
+}
+
+.product-description {
+  width: 98%;
+  margin-bottom: 10px;
+  height: 65px;
+  font-size: 1.3em;
+  resize: none;
+}
+
+#nappiVaatteet,
+#nappiKeittiö,
+#nappiKirjat,
+#nappiHuonekalut,
+#nappiTietotekniikka,
+#nappiMuut {
+  display: inline-block;
+  color: var(--tekstiMusta);
+  margin: auto;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: .04s;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+#napitKategoria {
+  margin: -20px auto;
+  text-align: center;
+  padding: 10px;
+}
+
+#nappiEtusivu,
+#nappiKategoriat,
+#nappiIlmoita,
+#nappiTuotehaku,
+#nappiKirjauduUlos {
+  font-size: 1em;
+  font-weight: bold;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+#nappiKirjaudu,
+#nappiLuoTunnus,
+#nappiEtusivu,
+#nappiKategoriat,
+#nappiIlmoita,
+#nappiTuotehaku,
+#nappiKirjauduUlos {
+  display: inline-block;
+  margin-top: .5vw;
+  padding: 4px 15px;
+  color: var(--tekstiMusta);
+  border: solid 1px;
+  border-color: #30503a;
+  border-radius: 15px;
+  background-color: var(--ylaNapit);
+  transition: .05s;
+  width: 200px;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+#nappiKirjauduUlos {
+  color: rgb(204, 28, 28) !important;
+}
+
+#nappiLuoUusiTunnus,
+#nappiKirjauduKirppis,
+#nappiPeruutaLuoTunnus,
+#nappiPeruutaKirjautuminen,
+#nappiLaheta {
+  display: block;
+  color: var(--tekstiMusta);
+  background-color: var(--lomakeNapit);
+  margin: 20px 30px 20px 130px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: solid 1px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: .04s;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+#nappiLaheta {
+margin: 0px 170px ;
+}
+
+#nappiLuoUusiTunnus:hover,
+#nappiPeruutaLuoTunnus:hover,
+#nappiKirjauduKirppis:hover,
+#nappiPeruutaKirjautuminen:hover,
+#nappiVaatteet:hover,
+#nappiKeittiö:hover,
+#nappiKirjat:hover,
+#nappiHuonekalut:hover,
+#nappiTietotekniikka:hover,
+#nappiMuut:hover,
+#nappiLaheta:hover,
+.deleteButton:hover,
+.lataa:hover {
+  transform: scale(1.05);
+  color: rgb(126, 126, 126);
+  border: solid 1px;
+  border-color:#a1a1a1;
+  background-color: var(--lomakeNapitHover);
+  box-shadow: 0px 0px 15px var(--lomakeNapitHover);
+}
+
+#nappiKirjaudu:hover,
+#nappiLuoTunnus:hover,
+#nappiEtusivu:hover,
+#nappiKategoriat:hover,
+#nappiIlmoita:hover,
+#nappiTuotehaku:hover,
+#nappiKirjauduUlos:hover {
+  transform: scale(1.02);
+  color:#cdffdb !important;
+  border: solid 1px;
+  border-color:#5f9770;
+  background-color: var(--ylaNapitHover);
+  box-shadow: 0px 0px 15px #75dac9;
+}
+
+#palaaSivunAlkuun {
+  width: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: -50px;
+  box-shadow: 10px 5px 10px #0d2525;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: right .2s ease-in-out;
+}
+
+#palaaSivunAlkuun:hover {
+  transform: translateX(-5px);
+}

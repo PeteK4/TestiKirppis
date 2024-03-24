@@ -1,0 +1,299 @@
+.otsikko {
+  color: white;
+  font-size: 4.2vw;
+  text-align: center;
+  margin-top: 5vw;
+}
+/* lisätty 11.3.*/
+#hakutulokset {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* tuokuvat ja tekstit*/
+.product-preview-item {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0px;
+  /*background-color: rgb(120, 173, 175);*/ /*alkuperäinen väri
+  background-color: rgb(153, 203, 245); /*taustavärin kokeilu 22.3.*/
+  background-color: var( --tuoteLista);
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #ccc; /* Kehyksen tyyli, leveys ja väri */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lisää varjostus */
+}
+
+
+#product-previews,
+#product-list,
+.tuote,
+.product,
+#tuoteTiedot,
+#kategoriaTuotteet  {
+  max-width: 800px;
+  margin: 3px auto;
+  padding: 2px 3px;
+  background-color: var(--ilmoitaLomake);
+  display: block;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #ccc; /* Kehyksen tyyli, leveys ja väri */
+}
+
+.product {
+  padding: 10px;
+}
+
+.product{
+  background-color: var(--tuoteLista);
+}
+
+#admin-list {
+  margin-bottom: 100px;
+}
+
+#product-previews,
+#kategoriaTuotteet {
+  background-color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-size: 1.35em !important;
+}
+
+.tuote h3 {
+  margin: 0;
+}
+
+.product-preview-item img {
+  max-width: 1200px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 2px solid #ccc; /* Kehyksen tyyli, leveys ja väri */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lisää varjostus */
+}
+
+#product-form {
+  max-width: 1200px;
+  margin: 0px;
+  /*background-color: rgb(40, 134, 3);*/
+  background-color: var(--ilmoitaLomake);
+  padding: 20px 20px;
+  border-radius: 8px;
+}
+
+.otsikko1 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.product-name {
+  padding-left: 5px;
+}
+
+/* lisätty 27.2.2024 kuvan ja tuotetekstin väliin tilaa*/
+.product-details {
+  margin: 10px;
+  flex: 1;
+}
+
+#tuotteenNimi {
+  margin: 5px;
+}
+
+p {
+  margin: 1px;
+  padding-left: 10px;
+  font-size: 1.15em !important;
+}
+
+a {
+  display: inline-block;
+  font-size: 1.23em; /* Aseta linkkien tekstikoko 1.1em:ksi */
+  margin: 10px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #cef;
+}
+
+a:hover {
+  transform: scale(1.03);
+  color: #fff !important;
+}
+
+.deleteButton,
+.deleteButton2 {
+  padding: 5px;
+  margin-right: 20px;
+  color: var(--tesktiMusta);
+  font-weight: bolder;
+  font-size: large;
+  width: 100px;
+  border-radius: 8px;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+.deleteButton2 {
+  transform: translateY(-140%);
+  margin-left: 80%;
+  margin-bottom: -20px;
+}
+
+#prevPageButton,
+#nextPageButton {
+  margin: 20px 20px;
+  padding: 4px 12px !important;
+  align-items: center;
+  padding: 0;
+  color: var(--tesktiMusta);
+  font-weight: bolder;
+  font-size: small;
+  border-radius: 8px;
+  cursor: url("../kuvat/handy.webp"), auto;
+}
+
+#prevPageButton:hover,
+#nextPageButton:hover {
+  transform: scale(1.05);
+  color: rgb(126, 126, 126);
+  border: solid 1px;
+  border-color:#a1a1a1;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px #ffffff
+} 
+
+#pagination {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 8%;
+}
+
+.logo1 {
+  display: flex;
+}
+
+.logo img {
+  margin-right: 50px; /* Lisää välistystä logon ja otsikon välille */
+  margin-left: 300px;
+  width: 100px; /* Voit muuttaa koon haluamaksesi */
+  height: auto; /* Säilyttää kuvan suhteen oikean */
+}
+
+.logo1 img {
+  margin-left: auto;
+  width: 11vw; /* Voit muuttaa koon haluamaksesi */
+  height: 8vw; /* Säilyttää kuvan suhteen oikeana */
+}
+
+#lisaaTuotteet {
+  position: relative;
+  display: block;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+#tuote-lomake-container {
+display: flex;
+}
+
+#tuote-lomake {
+  flex: 1; /* Annetaan lomakkeelle joustavuutta */
+  margin-right: 20px; /* Lisätään välistystä lomakkeen ja logon välille */
+}
+
+#haku {
+  max-width: 800px;
+  width: 50%; /* Määrittele hakukentän leveys */
+  margin: 0 auto; /* Aseta marginaali automaattisesti vaakasuunnassa keskittämistä varten */
+  text-align: center; /* Aseta tekstin keskitys hakukentässä */
+  padding: 34px 0px;
+  border-radius: 10px;
+  background-color: var(--ilmoitaLomake);
+  
+}
+
+/* lisätty 11.3. */
+#product-list,
+#kategoriaTuotteet-item,
+#hakutulokset {
+  width: 50%; /* Määrittele hakutulosten divin leveys */
+  margin: 0 auto; /* Aseta marginaali automaattisesti vaakasuunnassa keskittämistä varten */
+  text-align: left; /* Aseta tekstin vasen reunus hakutuloksissa */
+  background-color: aliceblue;
+  border: 1px solid black; /* Lisää kehys laatikon ympärille */
+  border-radius: 8px;
+  padding: 3px; /* Lisää sisätilaa sisällölle */
+}
+
+.logo1 {
+  flex: 0 0 auto; /* Määritetään logo kiinteäksi leveydeksi */
+}
+
+input:hover,
+textarea:hover {
+  cursor: text
+}
+
+/* NÄYTTÖ > 1920 ----------------------------------------*/
+
+@media only screen and (min-width: 1920px) {
+
+.logo1 img {
+  margin-left: auto;
+  width: 9vw;
+  height: 6vw;
+  }
+}
+
+/* MOBIILI ----------------------------------------*/
+
+@media only screen and (max-width: 1080px) {
+
+  .logo {
+    display: none;
+  }
+
+  .logo1 img {
+    display: none;
+    }
+
+  #product-previews,
+  #product-list,
+  .tuote,
+  .product {
+    padding: 2px;
+    width: 98%;
+    margin: auto;
+  }
+
+  #product-form {
+    padding: 5px 5px;
+    border-radius: 1px;
+  }
+  
+  #tuoteTiedot {
+  padding: 0px 0px 20px 8px;
+  }
+
+  #haku {
+    border-radius: 2px;
+    width: 100%; 
+  }
+
+  .deleteButton2 {
+    transform: translateY(-140%);
+    margin-left: 65%;
+    margin-bottom: -20px;
+  }
+}
+

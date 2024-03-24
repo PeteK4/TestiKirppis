@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stlMain.css">
+        <link rel="stylesheet" href="./styles/stlMQuery.css">
+        <link rel="stylesheet" href="./styles/kirppis.css">
+        <link rel="stylesheet" href="./styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+        <style>
+          body {
+            overflow: hidden;
+          }
+          .ylaPalkki {
+            height: 8em !important;
+          }
+        </style>
+    </head>
+
+    <body>
+
+      <div class="ylaPalkki">
+        <div id="ylaPalkkiTeksti1">Tervetuloa nettikirppikseen!</div>
+        <button id="nappiKirjaudu">Kirjaudu sisään</button>
+        <button id="nappiLuoTunnus">Luo uusi käyttäjätunnus</button>
+        <div id="ylaPalkkiTeksti2"></div>
+      </div>
+
+      <h1 id="otsikko">NETTIKIRPPIS MoniTori</h1>
+    
+        <img id="etusivuKuva" src="./kuvat/etusivu1.webp" alt="" draggable="false">
+        <img id="etuLasi" src="./kuvat/etulasi.webp" alt="Läpinäkyvä kuva">  
+
+        <div class="lomake">
+          <div id="lomakeOtsikko"></div>
+            <div id="tuote-lomake-container">
+              <form id="tuote-lomake">
+              <div id="kentta1">
+                <label for="id">Tunnus:</label>
+                <input class="kenttaLayout" type="text" id="id">
+              </div>
+        
+              <div id="kentta2">
+                <label for="salasana">Salasana:</label>
+                <input class="kenttaLayout" type="text" id="salasana">
+              </div>
+            
+              <div id="kentta3">
+                <label for="nimi">Nimi:</label>
+                <input class="kenttaLayout" type="text" id="nimi" maxlength="16">
+              </div>
+
+              <div id="kentta4">
+                <label for="sahkoposti">Sposti:</label>
+                <input class="kenttaLayout" type="text" id="sahkoposti">
+              </div>
+
+              <div id="kentta5">
+                <button type="button" id="nappiLuoUusiTunnus">Luo tunnus</button>
+                <button type="button" id="nappiPeruutaLuoTunnus" style="margin: 0px;">Peruuta</button>
+              </div>
+
+              <div id="kentta6">
+                <button type="button" id="nappiKirjauduKirppis">Kirjaudu</button>
+                <button type="button" id="nappiPeruutaKirjautuminen" style="margin: 0px;">Peruuta
+                </button>
+              </div>
+
+            </form>
+            <div class="logo1">
+              <img src="./kuvat/logo.png" alt="Logo" draggable="false">
+            </div>        
+          </div>
+        </div>
+
+        <script src="./javascript/rekLomake.js"></script>
+        <script src="./javascript/luoTunnus.js"></script>
+        <script src="./javascript/kirjaudu.js"></script>
+        <script src="./javascript/kuvakaruselli.js"></script>
+
+    </body>
+</html>

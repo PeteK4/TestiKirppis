@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/stlMain.css">
+        <link rel="stylesheet" href="./styles/stlMQuery.css">
+        <link rel="stylesheet" href="./styles/kirppis.css">
+        <link rel="stylesheet" href="./styles/varit.css">
+        <title>Nettikirppis MoniTori</title>
+    </head>
+
+    <body>
+
+        <div class="ylaPalkki">            
+            <img class="logo" src="./kuvat/logo.png" alt="Logo">
+            <div id="ylaPalkkiTeksti1">Nettikirppis MoniTori</div>
+            <div id="linkkiNapit"></div>
+        </div>
+
+        <div id="valiOtsikko">Etsi tuotteita hakusanalla:</div>
+        
+        <!-- Hakukenttä -->
+        <div>
+            <form id="haku">
+                <input type="text" id="hakukentta" placeholder="Etsi tuotteita">
+                    <button type="button" id="hakunappi">Hae</button>
+            </form>
+        </div>
+
+        <!-- Hakutulokset -->
+        <div style="display: none" id="valiOtsikko2">Kirpparilta löytyy:</div>
+        <div style="display: none; margin-top: 50px;" id="hakutulokset"></div>
+        <img id="palaaSivunAlkuun" src="./kuvat/sivunAlkuun.webp" alt="" title="Palaa sivun alkuun" draggable="false">
+
+        <script src="./javascript/tarkistaKirjautuminen.js"></script> 
+        <script src="./javascript/tuotehaku.js"></script>
+        <script src="./javascript/napit.js"></script>
+        <script src="./javascript/sivunAlkuun.js"></script>
+        <script>lataaNapit("linkkiNapit");</script>
+    </body>
+</html>        

@@ -1,0 +1,14 @@
+:root {
+    --body: #286d6d;
+    --taustaVarjo: #1e5353;
+    --ilmoitaLomake: #4c9999;
+    --tuoteLista: #66aca6;
+
+    --ylaNapit: #4fce75;
+    --ylaNapitHover: #6eda8e;
+    --lomakeNapit: #e9e9e9;
+    --lomakeNapitHover: #fff;
+
+    --tekstiMusta: #000;
+    --tekstiValkoinen: #fff;
+}
